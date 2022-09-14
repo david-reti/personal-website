@@ -17,7 +17,7 @@ body {
     grid-template: repeat(10, 1fr) / repeat(12, 1fr);
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
     .home-page__picture-section {
         width: 50vw;
         grid-template: repeat(7, 1fr) / repeat(4, 1fr);
@@ -29,7 +29,7 @@ body {
     grid-area: 1 / 1 / 7 / 11;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
     .home-page__picture-section__picture {
         grid-area: 2 / 2 / 6 / 4;
     }
@@ -52,7 +52,7 @@ body {
     grid-area: 8 / 2 / 8 / 10;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
     .home-page__picture-section__description {
         grid-area: 7 / 2 / 7 / 4;
     }
@@ -105,7 +105,7 @@ body {
     background-color: black;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
     .home-page__title-section {
         width: 50vw;
     }
@@ -148,7 +148,13 @@ body {
 }
 
 .home-page__title-section__form {
-    width: 40%;
+    width: 60%;
+}
+
+@media screen and (orientation: landscape) {
+    .home-page__title-section__form {
+        width: 40%;
+    }   
 }
 
 .home-page__title-section__form > * {
