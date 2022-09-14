@@ -6,7 +6,7 @@ on:
       - master
 jobs:
   upload_to_host:
-    - name: Upload to Host
+      name: Upload to Host
       runs-on: ubuntu-latest
       steps:
       - name: Checkout
