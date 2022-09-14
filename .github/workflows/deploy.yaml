@@ -7,8 +7,8 @@ on:
 jobs:
   upload_to_host:
     - name: Upload to Host
-    - runs-on: ubuntu-latest
-    - steps:
+      runs-on: ubuntu-latest
+      steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Upload Files to Server using SCP
