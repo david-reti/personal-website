@@ -152,10 +152,28 @@ body {
     width: 100%;
     display: block;
     padding: 0.7em;
-    font-weight: 700;
-    font-family: sans-serif;
     box-sizing: content-box;
     background-color: yellow;
+}
+
+.home-page__title-section__form__submit__text {
+    color: black;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+#contact_button_text_desktop {
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    #contact_button_text {
+        display: none;
+    }
+
+    #contact_button_text_desktop {
+        display: inline;
+    }
 }
 
 .home-page__title-section__links__image {
