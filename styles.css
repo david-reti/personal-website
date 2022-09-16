@@ -52,6 +52,12 @@ body {
     grid-area: 8 / 2 / 8 / 10;
 }
 
+@media screen and (max-aspect-ratio: 1 / 2) and (orientation: portrait) {
+    .home-page__picture-section__description {
+        padding-bottom: 10vh;
+    }
+}
+
 @media screen and (orientation: landscape) {
     .home-page__picture-section__description {
         grid-area: 7 / 2 / 7 / 4;
