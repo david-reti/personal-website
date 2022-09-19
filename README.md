@@ -1,6 +1,6 @@
 # David's Website
 
-Hello! You've found the git repository for my personal website, which you can most easily access at [davidreti.net](davidreti.net)
+Hello! You've found the git repository for my personal website, which you can most easily access at [davidreti.net](https://www.davidreti.net)
 
 The goal of this website is to show the most important information about me, and serve as a single place where you can find links to my various profiles. Also, I found it important to include only the most important elements, while avoiding any unnecessary frills. As you can see, the result is that the website is kept simple and small, while containing all the necessary content. Feel free to look at the code!
 
