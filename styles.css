@@ -237,7 +237,7 @@ body {
     display: grid;
     justify-items: center;
     grid-template: repeat(3, 1fr) / 1fr;
-    padding-bottom: 6em;
+    padding-bottom: 5em;
     row-gap: 4em;
 }
 
@@ -291,7 +291,7 @@ div[class*='work-page__positions__card'] {
 
 .work-page__positions__card__header__date {
     font: 0.9em sans-serif;
-    float: inline-end;
+    float: right;
     margin-right: 1em;
     color: #333;
 }
