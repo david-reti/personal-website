@@ -1,0 +1,179 @@
+/* CSS Document */
+
+body {
+	background-image: linear-gradient(to bottom right, #a6bade, #49bfcc);
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+}
+
+.header-section {
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 32px;
+	padding: 8px;
+	background-color: white;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+	height: 48px;
+	max-height: 48px;
+}
+
+.body-container {
+	display: flex;
+	justify-content: center;
+}
+
+.body-sections {
+	display: flex;
+	justify-content: space-around;
+	width: 75%;
+	align-self: center;
+}
+
+.links-section {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 25%;
+	height: 48px;
+}
+
+.home-link {
+	width: 48px;
+	height: 48px;
+	margin-left: 16px;
+}
+
+.main-section {
+	width: 70%;
+	border-radius: 8px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.title-section {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.inner-main-section {
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 8px;
+}
+
+.info-section {
+	width: 23%;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.inner-info {
+	background-color: white;
+	margin: 0px;
+	border-radius: 8px;
+}
+
+.bottom-section {
+	background-color: white;
+	margin-top: 40px;
+	display: inline-flex;
+}
+
+.report-title {
+	font-family: Montserrat, sans-serif;
+	font-size: 24pt;
+	margin-left: 5%;
+}
+
+.section-header {
+	font-family: Montserrat, sans-serif;
+	font-size: 16pt;
+	margin-left: 5%;
+	font-weight: bold;
+}
+
+.paragraph-text {
+	font-family: Roboto, sans-serif;
+	font-size: 11pt;
+	margin-left: 5%;
+	margin-right: 5%;
+	line-height: 1.75;
+}
+
+.navbar-text {
+	font-family: Roboto, sans-serif;
+	cursor: grabbing;
+	color: #003471;
+	text-decoration: none;
+}
+
+.no-decoration {
+	text-decoration: none;
+	color: black;
+}
+
+.no-decoration:hover {
+	color: lightgray;
+}
+
+.navbar-text:hover {
+	color: #5084C1;
+}
+
+@media screen and (max-width: 1200px) {
+	.body-sections {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.body-sections {
+		width: 100%;
+	}
+	
+	.links-section{
+		width: 35%;
+	}
+	
+	.body-sections {
+		flex-direction: column;
+	}
+	
+	.inner-main-section {
+		margin-top: 32px;
+		width: 80%;
+	}
+	
+	.main-section {
+		width: 100%;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	.info-section {
+		width: 100%;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	.inner-info {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.body-sections {
+		width: 100%;
+	}
+	
+	.inner-info {
+		padding-bottom: 20px;
+		justify-content: space-between;
+	}
+}

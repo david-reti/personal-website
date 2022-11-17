@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Description" content="David Reti - COOP Work Term Blog">
+		<title>David Reti - COOP Work Term Blog</title>
+		<link rel="stylesheet" href="blog-2.css">
+		<link rel="icon" href="../icon.png">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="outer-header">
+            <section class="headersection">
+                <a href="https://davidreti.net"><p class="header-text" style="margin-left: 1vw;">Home</p></a>
+                <a href="https://github.com/david-reti"><p class="header-text">GitHub</p></a>
+                <a href="https://davidreti.net"><p class="header-text">About</p></a>
+            </section>
+        </div>
+        <section class="blog-outer-container">
+            <div class="article-select-section" id="articles"></div>
+            <div class="blog-inner-container">
+                <div class="article-container" id="article">
+                    <div style="display: flex; flex-direction: row; justify-content: center;">
+                        <div style="border-top-left-radius: 15px; border-bottom-right-radius: 15px; border-style: solid; border-width: 1px; margin-top: 3vh; width: 90%; border-color: #193345;">
+                            <p class="section-paragraph" style="font-size: 14pt;">Quick Facts</p>
+                            <div style="display: flex; flex-direction: row;">
+                                <p class="section-paragraph" style="width:50%; margin-top: 0.5vh; margin-bottom: 0px;"><b>Position:</b> Technical Systems Analyst Co-op</p>
+                                <p class="section-paragraph" style="width:50%; margin-top: 0.5vh; margin-bottom: 0px;"><b>Company Name:</b> RBC</p>
+                            </div>
+                            <div style="display: flex; flex-direction: row;">
+                                <p class="section-paragraph" style="width: 50%; margin-top: 0.5vh; margin-bottom: 0.5vh;"><b>Company Location:</b> Toronto, ON</p>
+                                <p class="section-paragraph" style="width: 50%; margin-top: 0.5vh; margin-bottom: 0.5vh;"><b>Company Field:</b> Banking</p>
+                            </div>
+                            <p class="section-paragraph" style="margin-top: 0px;"><b>Technologies Used:</b> HPE NonStop, IBM I, TACL, TAL, IBM CL, Python, DB2</p>                            
+                        </div>
+                    </div>
+                    <noscript>Please enable javascript to allow the content to be loaded</noscript>
+                </div>
+            </div>
+        </section>
+        <p style="position:absolute; bottom:0px; background-color: #193345; width: 100%; margin: 0; color: darkgray; font-family: Roboto; font-size: 8pt;">This web page was tested on a computer monitor, and may not display correctly on other devices. Picture credit: Lum3d.com through Pexels</p>
+    </body>
+
+    <script>
+        let data = `{
+            "Fall 2019 @ RBC" : {
+            "Introduction" : "Learning is one of the most interesting and complex activities we take part in. <b>To pretend to know a topic is easy but to truly learn something is very difficult.</b> That is because the dual parts of it, the awareness and the experience, must support each other. To be aware of a topic from reading a textbook or listening to a lecture is a valuable starting point, but quickly fades without experience to back it up. To have experience without awareness of its meaning can lead to important points being missed. I consider my part four months at RBC to have been extremely valuable because in backing up my awareness of topics with experience, I was able to learn important topics that I had wanted to for a long time. This includes technology, but really one of the most important lessons I learned is that <b>the start and end of any technical job is not that.</b> In addition to coding, it is important to know how to work with a variety of people and cultures. My hope, through this report, is to include my experience in all aspects of my term and hopefully some valuable lessons learned therefrom.",
+            "About The Company" : "RBC is one of the most well-known and valuable brands in Canada and a very large company, with personal banking being only one part of the bank’s operations. In additional to the branches that the reader would be familiar with, RBC has several areas including insurance, commercial banking, capital markets and a variety of ventures aimed at making clients’ lives easier, from applications that help with home renovations and paying rent, to those aimed at helping individuals start small businesses.<br><br> In order to provide these services, the bank needs an extremely reliable and high-performance IT infrastructure, which is the area of the business that I worked with the most. One of the most interesting aspects of working in IT at RBC is that a great variety of technologies are used in the company, even if some are more widely used than others. For example, in addition to the servers that I worked on, the bank also uses IBM mainframes as well as x86 servers and a variety of programming languages. This is an excellent learning opportunity for students, because <b>just like spoken languages, operating systems and programming languages also encompass different ways of approaching problems</b> and seeing these solutions can help us be aware of the options that exist.",
+            "Goals-Header" : "In this term, I took a slightly different approach to setting and evaluating goals: I focused on the goals that I thought I needed the most improvement on, and those which I thought would help the most when it came to my own personal development. While this is a slightly different approach to my previous strategy, and certainly more challenging, I also think it is more effective when it comes to evaluating and improving my performance. I set three major goals for this Co-op term:",
+            "Goal-1" : "To develop a good knowledge of the team, the technologies that we work with, the systems we help keep running as well as the requirements and responsibilities of my position.",
+            "Goal-2" : "To take more initiative and participate in the innovation challenge, which involves writing software to solve real business problems at the company.",
+            "Goal-3" : "To learn to ask for help earlier and when I need it. I believe it would be best for my learning if I tried to solve every problem on my own first, asking for help if I get stuck.",
+            "Goals-Footer" : "Overall, I am quite happy with my experience relating to these goals, not because I achieved any of them perfectly but because I believe they helped push me in the right direction. I am very happy with my progress in terms of the technologies I worked with and while I am by no means an expert now, I did feel much more able to confident to accomplish tasks at the end of the term. While my group did not achieve a very high result in the innovation challenge, I am still proud of my enthusiasm and my contribution to the effort, which was a functional and highly performant server.<br><br>I believe the area where I saw the most advancement was in my <b>ability to ask for help and clarification when needed.</b> I remember there was one concept that I needed to understand to improve a backup script, which had to be explained three times before I fully understood it. Even though it was a challenge at first, I am now really happy that I asked for that clarification because without it, I would not have same level of understanding that I have now, and I would not have been able to develop as good a script as I had.",
+            "Job Description" : "As part of a support team, my job mostly consisted of writing and updating scripts and programs to automate tasks on our servers, and to help keep them running smoothly. This included scripts to help keep track of backups and restart any backups when needed, scripts to update user profiles and to generate reports. While these may not sound like extremely complex tasks, they did require a good knowledge of logic and operating systems, which I was happy to use. The programming languages and technologies used made writing these scripts very interesting, as they are written differently than on a windows server, for example, where we would not be using the message system and spooler nearly as much.",
+            "Relation To Acedemic Studies" : "Over the course of this work term, I found that the most useful piece of knowledge I had from university was my knowledge of operating systems from second year. Since the operating systems that I worked on did not have the same abstractions as newer operating systems, having this knowledge really helped me understand what was going on. At the same time, <b>I found many things to be different from what I learned in university.</b> I found that there are many factors that play a part in the creation of a solution and that the techniques and solutions that are taught in university are not always optimal in an actual work environment. I think this is related to the fact that many courses only cover topics in isolation, when in practice they would be applied in integrated environments.",
+            "Conclusions" : "I find that I have grown a lot, both personally and professionally over the course of this work term. Working with a variety of languages and servers has really opened my eyes to new ways of programming and achieving solutions. I am also very happy with my progress on the goals that I set. At the same time, I also learned about my own working style and needs. In the future, I would like to take a slightly different approach to the Co-op process. I would like to try working not only in a variety of industries but also at a variety of types of cultures. While many students only want to learn technical skills from Co-op, I now believe the most valuable part of the program is in learning to work in a variety of environments and with a variety of people.",
+            "Acknowledgments" : "I would really like to thank my manager Grant Lowe, for teaching me about the NonStop servers, giving me a chance to show my knowledge though interesting tasks, and generally being an amazing manager. I would not have been able to succeed without his help!"
+            },
+            "Summer 2019 @ Vital Images" : {
+            "Introduction" : "I believe there is little exaggeration in writing that the four months of my first co-op work term have been some of the most exciting and challenging in my life. I found an almost unbelievable amount of knowledge about the medical software industry, various standards and programming languages, working in larger teams and the practice of software engineering as a whole. However, I think the most important knowledge I found was about the nature of life in my position. I hope this website proves useful and interesting not only as a reflective piece on my experience, but also a projective piece about the novelties and challenges of life as a co-op. Life is not a template that any of us can trace, though many times I see blogs simply list work experiences as “examples”. I would like to send a different message. I want it to be known that it is normal and common for co-ops to feel anxiety, to be overwhelmed and make mistakes. And that this does not stop us from being amazing.",
+            "About The Company" : "Though I have listed several facts about the company I worked at under the Quick facts section of this site, I think the most important aspects of a company are not these. I think the most important aspects of a company are what they do and how they do it. Vital Images makes software related to medical imaging (hence the name), offering a range of software from image viewers to software that helps manage the images themselves (what I worked on). The pipeline of medical imaging, from the modalities (the machines that take the images) to the final doctor's report is extremely complicated with many points of failure, and the company is built to reflect this. Computer science relates mostly to the manipulation of data and while most of the software that I worked on related to moving, storing or converting files, the techniques used to carry out these operations touch the core of the subject.",
+            "Goals-Header" : "The submission of my goals for this work term was quite late, because I wanted to ensure that the goals I set were realistic and related to the situations I was to face. My first week was spent mostly in confusion due to the magnitude of the project at hand, which made the writing of goals, as well as my job quite difficult. I think this is a very common problem that co-op students face, especially in a new industry. I always knew the general categories that I wanted to set goals under, and finally decided on them as follows:",
+            "Goal-1" : "To develop a working understanding of the python programming language and the pytest framework ( including language features and library functions).",
+            "Goal-2" : "To gain an understanding of the standards and technologies involved in the field of medical software development.",
+            "Goal-3" : "To gain an understanding of the standards and technologies involved in the field of medical software development.",
+            "Goals-Footer" : "When selecting the technologies to learn, I placed special emphasis on Broad Applicability. In other words, since I did not start with many skills, I wanted to learn skills that could be applied in many places. I knew that Python is commonly used, which made it a goal. I also knew that medical specific technologies, while difficult to learn, were also valuable. Of course, communication skills are important at every company. Surprisingly, I achieved both my Python and communications related goals extremely well. However, I had trouble learning about the medical technogies due to a lack of exposure. My mentor expressed that a major reason for this is that I was so productive in my original role, that he did not want to switch me to another area of testing, which would have exposed me to more of these technologies.",
+            "Job Description" : "As part of the QA team, my daily work revolved mainly around writing system (integration) tests and writing a test framework. When I started the job, I was very worried due to the fact that I did not know Python, which is the language that the code was written in. What I found after writing some tests is that programming languages are quite easy to learn, while codebases are hard to learn. With new co-op students starting every 4 months, it was imperitive to develop a framework which was easy to use, which is where I spent most of my time. Over the course of my term, I developed a test framework for a large set of pages which was both consistent and easy to use. One good lesson to learn from my work is that that the developer experience is important. When frameworks and libraries are easy to use, software is developed much faster and with fewer bugs.",
+            "Relation to Acedemic Studies" : "Over the course of this work term, I found myself applying much of the design and work knowledge that I learned in software design courses. I find that many times, companies place importance on different aspects of software development than university courses. For example, I was sometimes told not to worry about the efficience (big O) of a function unless it was running too slowly. I do believe that the base knownledge that I learned in courses, such as how memory and sorting works, is almost always useful.",
+            "Conclusions" : "Over the course of this term, I learned many concepts and technologies that I did not know before. I think there is also another aspect of the co-op experience which is worth talking about. When I started this job, I felt very stressed, tired and overwhelmed for the first two weeks. Though I improved by the end, the journey was difficult. Almost every other co-op student I talked to shared the same experience. I think it is important for both co-op students and those new to the workforce to know that it is always hard to start a job and to become good at it. I think the greatest challenges are oftentimes more personal than technical and that we can learn equally valuable skills from overcoming them.",
+            "Acknowledgments" : "I would not have been able to succeed without the help of my wonderful mentors and team members Kyle Kreutzer, Ben Hartwell and Wes Thomson. They are all wonderful people and I feel very fortunate that I got a chance to work with them over this semester."
+            }
+        }`;
+
+        let parsed_data = JSON.parse(data);
+
+        var counter = 0;
+        for(let i of Object.keys(parsed_data)) {
+            if(!counter) {
+                document.getElementById("articles").innerHTML += `<div class="selectcont"><div class="article-listing selected"><b>${i}</b></div><div class="accent" style="background-color:yellow;"></div></div>`;
+                counter++;
+            } else {
+                document.getElementById("articles").innerHTML += `<div class="article-listing selectable">${i}</div>`;
+                counter++;
+            }
+
+            if(counter == 1) {
+                for(let j of Object.keys(parsed_data[i])) {
+                    if(!j.includes("Goal")) {
+                        document.getElementById("article").innerHTML += `<h4 class="section-header">${j}</h4>`;
+                        document.getElementById("article").innerHTML += `<p class="section-paragraph">${parsed_data[i][j]}</p>`;
+                    } else if(j == "Goals-Header") {
+                        document.getElementById("article").innerHTML += `<h4 class="section-header">Goals</h4>`;
+                        document.getElementById("article").innerHTML += `<p class="section-paragraph">${parsed_data[i]["Goals-Header"]}</p>`;
+                        document.getElementById("article").innerHTML += `<ol class="goals-list"><li class="section-paragraph">${parsed_data[i]["Goal-1"]}</li><li class="section-paragraph">${parsed_data[i]["Goal-2"]}</li><li class="section-paragraph">${parsed_data[i]["Goal-3"]}</li></ol>`;
+                        document.getElementById("article").innerHTML += `<p class="section-paragraph">${parsed_data[i]["Goals-Footer"]}</p>`;
+                    }
+                }
+            }
+        } 
+        
+        while(counter < 5) {
+            document.getElementById("articles").innerHTML += `<div class="article-listing"></div>`;
+            counter++;
+        }
+
+        function loadArticle(name) {
+            for(let j of Object.keys(parsed_data[name])) {
+                if(!j.includes("Goal")) {
+                    document.getElementById("article").innerHTML += `<h4 class="section-header">${j}</h4>`;
+                    document.getElementById("article").innerHTML += `<p class="section-paragraph">${parsed_data[i][j]}</p>`;
+                } else if(j == "Goals-Header") {
+                    document.getElementById("article").innerHTML += `<h4 class="section-header">Goals</h4>`;
+                    document.getElementById("article").innerHTML += `<p class="section-paragraph">${parsed_data[i]["Goals-Header"]}</p>`;
+                    document.getElementById("article").innerHTML += `<ol class="goals-list"><li class="section-paragraph">${parsed_data[i]["Goal-1"]}</li><li class="section-paragraph">${parsed_data[i]["Goal-2"]}</li><li class="section-paragraph">${parsed_data[i]["Goal-3"]}</li></ol>`;
+                    document.getElementById("article").innerHTML += `<p class="section-paragraph">${parsed_data[i]["Goals-Footer"]}</p>`;
+                }
+            }
+        }
+    </script>
+
+</html>

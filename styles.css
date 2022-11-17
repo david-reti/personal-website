@@ -1,7 +1,14 @@
 body {
     margin: 0;
     background-color: black;
+    overflow-x: hidden;
 }
+
+/*
+*****************************************************
+    Home Page 
+*****************************************************
+*/
 
 .home-page {
     width: 100vw;
@@ -176,6 +183,7 @@ body {
 .home-page__title-section__form__submit {
     display: block;
     padding: 0.7em;
+    cursor: pointer;
     width: calc(100% + 1px);
     box-sizing: content-box;
     border: 1px solid black;
@@ -205,4 +213,106 @@ body {
 .home-page__title-section__links__image {
     width: 2em;
     height: 2em;
+}
+
+/*
+*****************************************************
+    Work Page 
+*****************************************************
+*/
+
+.work-page {
+    border-top: 0.1em solid white;
+}
+
+.work-page__title {
+    color: white;
+    font: 2em serif;
+    display: flex;
+    justify-content: center;
+}
+
+.work-page__positions {
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    grid-template: repeat(3, 1fr) / 1fr;
+    padding-bottom: 6em;
+    row-gap: 4em;
+}
+
+@media screen and (orientation: landscape) {
+    .work-page__positions {
+        grid-template: 1fr / repeat(3, 1fr);
+        row-gap: 0;
+    }
+}
+
+div[class*='work-page__positions__card'] {
+    width: 75%;
+    border-top: 1em solid;
+    background-color: white;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (orientation: landscape) {
+    .work-page__positions__card--vital-images {
+        grid-area: 1;
+    }
+
+    .work-page__positions__card--rbc {
+        grid-area: 1 / 2;
+    }
+
+    .work-page__positions__card--ericsson {
+        grid-area: 1 / 3;
+    }
+}
+
+.vital-images {
+    border-color: red !important;
+}
+
+.rbc {
+    border-color: yellow !important;
+}
+
+.ericsson {
+    border-color: blue !important;
+}
+
+.work-page__positions__card__header__title {
+    font: 1.4em sans-serif;
+    margin-left: 0.5em;
+    display: inline-block;
+}
+
+.work-page__positions__card__header__date {
+    font: 0.9em sans-serif;
+    float: inline-end;
+    margin-right: 1em;
+    color: #333;
+}
+
+.work-page__positions__card__description {
+    font-family: sans-serif;
+    margin-left:  0.8em;
+    margin-right: 0.8em;
+    text-align: justify;
+}
+
+.work-page__positions__card__report-link {
+    color: white;
+    display: block;
+    background-color: black;
+    width: calc(100% - 0.2em);
+    border: 0.1em solid white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: serif;
+    margin-top: auto;
 }
