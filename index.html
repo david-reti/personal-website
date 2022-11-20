@@ -11,8 +11,12 @@
     
         <link rel="stylesheet" href="styles.css">
         <link rel="shortcut icon" href="icons/favicon.ico">
+
+        <script src="slideshow.js" defer></script>
     </head>
     <body>
+
+        <!-- Home -->
         <section class="home-page">
             <aside class="home-page__picture-section">
                 <figure class="home-page__picture-section__picture">
@@ -57,7 +61,9 @@
                     </button>
                 </form>
             </div>
-        </section>
+        </section> <!-- End of Home-->
+
+        <!-- Previous Work -->
         <section class="work-page">
             <h2 class="work-page__title">Previous Work</h2>
             <div class="work-page__positions">
@@ -101,11 +107,58 @@
                     <a class="work-page__positions__card__report-link" href="blog/blog-3.html">View Report</a>
                 </div>
             </div>
-        </section>
-        <!-- <section class="projects-page">
+        </section> <!-- End of Previous Work-->
 
-        </section>
-        <section class="education-page">
+        <!-- Projects-->
+        <section class="projects-page">
+            <h2 class="projects-page__title">Projects</h2>
+            <div class="projects-page__showcase">
+                <noscript>
+                    <a href="https://github.com/david-reti" class="noscript-slideshow-link">
+                        <img src="icons/github.png" class="noscript-slideshow-image">
+                        <h3 class="noscript-slideshow-description">View my projects on GitHub</h3>
+                    </a>
+                </noscript>
+                <div class="projects-page__showcase__slideshow">
+                    <a class="projects-page__showcase__slideshow__card therest first" href="https://therest.ca">
+                        <h3 class="projects-page__showcase__card__title">The Rest</h3>
+                        <p class="projects-page__showcase__card__description">
+                            The Rest is my blog site focused on one of my favourite hobbies - food and cooking! Written in Ruby on Rails 7, 
+                            it features rich articles, account management and comments, and is fully hosted on Heroku and AWS. The source code is also available on GitHub.
+                        </p>
+                    </a>
+                    <a class="projects-page__showcase__slideshow__card craftworlds second" href="https://github.com/david-reti/Craftworlds">
+                        <h3 class="projects-page__showcase__card__title">Craftworlds</h3>
+                        <p class="projects-page__showcase__card__description">
+                            This is a game I made in C and OpenGL over the winter break of 2022. It includes unique and interesting optimizations for combining blocks to improve performance, 
+                            preventing jagged edges at a distance, and a O(log n) generation algorithm.
+                        </p>
+                    </a>
+                    <div class="projects-page__showcase__slideshow__card medical third">
+                        <h3 class="projects-page__showcase__card__title">Medical Survey Software</h3>
+                        <p class="projects-page__showcase__card__description">
+                            This is a medical survey sending and parsing system I made in PHP while volunteering at a Toronto sleep clinic. It includes the ability to send and 
+                            complete surveys, patient verification and special parsing logic and PDF report generation.
+                        </p>
+                    </div>
+                    <div class="projects-page__showcase__slideshow__card texgen fourth">
+                        <h3 class="projects-page__showcase__card__title">Texgen</h3>
+                        <p class="projects-page__showcase__card__description">
+                            This is a procedural image generator - a software which can create interesting images based on simple defined patterns, common in game development.
+                            My version uses natural language-like DSL for defining the images.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="projects-page__left-button" onclick="left()">
+                <div class="projects-page__left-button__arrow"></div>
+            </button>
+            <button class="projects-page__right-button" onclick="right()">
+                <div class="projects-page__right-button__arrow"></div>
+            </button>
+        </section> <!-- End of Projects -->
+        
+        <!-- <section class="education-page">
 
         </section> -->
     </body>

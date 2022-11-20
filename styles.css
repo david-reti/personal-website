@@ -223,6 +223,7 @@ body {
 
 .work-page {
     border-top: 0.1em solid white;
+    background-color: black;
 }
 
 .work-page__title {
@@ -237,7 +238,7 @@ body {
     display: grid;
     justify-items: center;
     grid-template: repeat(3, 1fr) / 1fr;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
     row-gap: 4em;
 }
 
@@ -316,3 +317,161 @@ div[class*='work-page__positions__card'] {
     font-family: serif;
     margin-top: auto;
 }
+
+/*
+*****************************************************
+    Work Page 
+*****************************************************
+*/
+.projects-page {
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr 2fr 1fr / repeat(4, 1fr);
+    background-color: black;
+}
+
+.projects-page__title {
+    font: 2em serif;
+    color: white;
+    grid-area: 1 / 2;
+    align-self: center;
+}
+
+.projects-page__showcase {
+    height: 50vh;
+    overflow: hidden;
+    grid-area: 2 / 2 / 2 / 4;
+    background-color: white;
+}
+
+button[class*="projects-page"] {
+    display: none;
+    width: 10vh;
+    height: 10vh;
+    justify-self: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.2em solid white;
+    cursor: pointer;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (orientation: landscape) {
+    button[class*="projects-page"] {
+        width: 10vw;
+        height: 10vw;
+        transition: background-color 0.2s;
+    }
+
+    button[class*="projects-page"]:hover {
+        background-color: white;
+        transition: background-color 0.2s;
+    }
+
+    button[class*="projects-page"]:hover div {
+        border-color: black;
+        transition: background-color 0.2s;
+    }
+}
+
+.projects-page__left-button {
+    grid-area: 2 / 1;
+}
+
+.projects-page__right-button {
+    grid-area: 2 / 4;
+}
+
+div[class*="arrow"] {
+    width: 3vh;
+    height: 3vh;
+    border-top: 0.2em solid white;
+}
+
+@media screen and (orientation: landscape) {
+    div[class*="arrow"] {
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+.projects-page__left-button__arrow {
+    border-left: 0.2em solid white;
+    rotate: -45deg;
+    margin: auto;
+}
+
+.projects-page__right-button__arrow {
+    border-right: 0.2em solid white;
+    rotate: 45deg;
+    margin: auto;
+}
+
+.noscript-slideshow-image {
+    object-fit: cover;
+    width: 10vh;
+    height: 10vh;
+}
+
+.noscript-slideshow-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+.noscript-slideshow-description {
+    color: black;
+}
+
+.projects-page__showcase__slideshow  {
+    height: 50vh;
+    width: 200vw;
+    position: relative;
+}
+
+.projects-page__showcase__slideshow__card {
+    color: black;
+    width: 50vw;
+    height: 50vh;
+    display: none;
+    position: absolute;
+    transition: left 0.5s;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.projects-page__showcase__card__title {
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5em;
+    width: fit-content;
+    background-color: white;
+}
+
+.projects-page__showcase__card__description { 
+    width: 50%;
+    margin: auto 1rem;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.therest { background-image: url('images/therest.webp'); }
+
+.craftworlds { background-image: url('images/craftworlds.webp'); }
+
+.medical { background-image: url('images/medical.webp'); }
+
+.texgen { background-image: url('images/texgen.webp'); }
+
+.first { left: 0vw; }
+
+.second { left: 50vw; }
+
+.third { left: 100vw; }
+
+.fourth { left: 150vw; }
