@@ -454,10 +454,16 @@ div[class*="arrow"] {
 }
 
 .projects-page__showcase__card__description { 
-    width: 50%;
-    margin: auto 1rem;
+    width: 85%;
     padding: 0.5rem;
+    margin-left: 1rem;
     background-color: white;
+}
+
+@media screen and (orientation: landscape) {
+    .projects-page__showcase__card__description {
+        width: 50%;
+    }    
 }
 
 .therest { background-image: url('images/therest.webp'); }
